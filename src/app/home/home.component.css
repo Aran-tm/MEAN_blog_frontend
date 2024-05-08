@@ -1,0 +1,8 @@
+ul {
+  display: flex;
+  justify-content: end;
+}
+
+li {
+  margin-left: 150px;
+}
