@@ -1,31 +1,33 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router';  // importacion de Routes
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { Page404Component } from './page404/page404.component';
 
-// ejemplo de enrrutado correctamente
+// array de rutas o sistema de rutas
 export const routes: Routes = [
+
+  // tres rutas u objetos que se necesitan importar
   {
-    path: 'login',
-    component: LoginComponent
+    path: 'login',      // direccion o ruta
+    component: LoginComponent     // componente que se necesita cargar
   },
   {
-    path: 'register',
-    component: RegisterComponent
+    path: 'register',   // direccion o ruta
+    component: RegisterComponent      // componente que se necesita cargar
   },
   {
-    path: 'home',
-    component: HomeComponent
+    path: 'home',    // direccion o ruta
+    component: HomeComponent        // componente que se necesita cargar
   },
   {
-    path: '',
-    redirectTo: '/login',
+    path: '',   // direccion o ruta VACIA
+    redirectTo: '/login',         // redireccion hacia
     pathMatch: 'full',
   },
   {
-    path: '**',
-    component: Page404Component,
+    path: '**',   // direccion o ruta ANONIMA (Cualquier otro CASO)
+    component: Page404Component,      // componente que se necesita cargar
   },
 ];
 
