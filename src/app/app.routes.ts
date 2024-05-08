@@ -22,7 +22,7 @@ export const routes: Routes = [
   },
   {
     path: '',   // direccion o ruta VACIA
-    redirectTo: '/login',         // redireccion hacia
+    redirectTo: '/login',         // redireccion hacia login component
     pathMatch: 'full',
   },
   {
