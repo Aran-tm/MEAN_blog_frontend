@@ -10,18 +10,19 @@
       <mat-icon>menu</mat-icon>
     </button>
 
+    <!-- Se crea una unsorted list (ul) y se le pasan las rutas como propiedad en el router link -->
     <ul>
       <li>
-        <a href="">Inicio</a>
+        <a [routerLink]="'../home'" routerLinkActive="active">Inicio</a>
       </li>
       <li>
-        <a href="">Noticias</a>
+        <a [routerLink]="'../login'" routerLinkActive="active">Noticias</a>
       </li>
       <li>
-        <a href="">Blogs</a>
+        <a [routerLink]="'../login'" routerLinkActive="active">Blogs</a>
       </li>
       <li>
-        <a href="">Contacto</a>
+        <a [routerLink]="'../login'" routerLinkActive="active">Contacto</a>
       </li>
     </ul>
   </mat-toolbar-row>

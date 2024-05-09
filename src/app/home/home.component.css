@@ -6,3 +6,7 @@ ul {
 li {
   margin-left: 150px;
 }
+
+a:hover {
+  border-bottom: 2px solid white;
+}
