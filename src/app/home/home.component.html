@@ -27,3 +27,14 @@
     </ul>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<mat-grid-list cols="4" rowHeight="100px">
+
+  <!-- Muestro las grillas del componente de angular material -->
+  @for (tile of tiles; track tile) {
+    <mat-grid-tile
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">{{tile.text}}</mat-grid-tile>
+  }
+</mat-grid-list>
